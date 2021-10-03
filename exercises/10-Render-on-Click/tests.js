@@ -53,22 +53,6 @@ it('You should create a new "div" element', function () {
 //     expect(js.toString().indexOf(expected) > -1).toBeTruthy();
 // });
 
-test('the js code should contain an assignment line allowing you insert Hello World with innerHTML', function () {
-  document.documentElement.innerHTML = html.toString();
-    const expected = 'innerHTML = "Hello World";';
-    // we can read from the source code
-    console.log(js.toString());
-    expect(js.toString().indexOf(expected) > -1).toBeTruthy();
-});
-
-test('the js code should contain an assignment line allow you change background color into yellow', function () {
-    document.documentElement.innerHTML = html.toString();
-    const expected = 'style.background = "yellow";';
-
-    // we can read from the source code
-    console.log(js.toString());
-    expect(js.toString().indexOf(expected) > -1).toBeTruthy();
-});
 
 test('the js code should contain an assignment line allow you add div into body', function () {
   document.documentElement.innerHTML = html.toString();
